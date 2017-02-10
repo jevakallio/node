@@ -1,6 +1,64 @@
 ## WEEK 2 TUTORIAL WIP
 
-Things to cover, from notes during the week:
+
+### Initital ideas for the tutorial structure
+
+This tutorial will run through creating a node app to serve JSON data about the different HTTP status codes, in accordance with the principles of REST.
+
+#### Set up
+1.
+   - set up a new project and install express. Alternatively, we provide a blank project to fork.
+   - hint: `npm init -y` & `npm i -S express`
+   
+2.
+   - download the provided `/data` directory (we will provide) to your project's root directory. take a look at the contents. 
+   - This will be JSON files for each of the routes that the students will add in the session.
+   
+3.
+   - download postman
+
+#### Build a json api
+
+1.
+   - write a server.js file
+   - create a `GET '/'` route to serve the base JSON (read the file path and send the response as json)
+   - this will serve information about the resources available from our API. Our work is to create them all.
+   - run the server on port 8080
+
+2.
+   - create a `GET /code` route to serve the `/data/code.json` file.
+   - get it in your browser (check out a json formatter)
+
+3.
+   - create a `GET /code/:id` route to serve data about an individual code within the `/data/code.json` file.
+   - if there is no such code in that file, respond with a 404.
+
+4.
+   - create a POST /code/:id route. this should save the post data to a file on your machine
+   - using postman, post the supplied json to your `localhost:8080/api/:code` endpoint
+   - try to get it in your browser
+
+#### MVC (advanced / extra)
+
+1.
+   - set up a templating engine? or static files? the different use cases. add an api source and add stuff into the view.
+   - store the HTML in a views directory
+   - could render the JSON data into a view
+
+### homework
+
+- practical project
+ - maybe add to the app from the session - 3, setting up views for the data?
+ - add more routes for the HTTP / REST verbs / methods
+- "koans"
+ - supertest unit tests to isolate concepts
+ - run tests in CI when PRs submitted
+
+---------------------
+
+# Notes
+
+Things we want to cover, from notes during the week:
 
 ### Repetition of the web backend use case: serving JSON and HTML
 - This is important to keep in mind why we do node in the first place
@@ -31,54 +89,3 @@ Things to cover, from notes during the week:
  - practical: game!
  - theoretical: stand up and explain these fundamentals
  - practical and theoretical: the node girls what is node document
-
-### ideas for the steps in the tutorial
-
-#### Set up
-
-1.
-   - set up a new project and install express - or should we havr a blank project to fork?
-   - remember how to do this? npm init -y; npm i -S express;
-
-2.
-   - download the provided /data directory to your root directory (have a look at them) JSON files for the resources we are going to add to our app ('/code GET', '/code POST' OR '/method GET', '/method POST')
-
-3.
-   - download postman
-
-#### Build a json api
-
-1.
-   - write a server.js file
-   - create a route to serve the / (base) JSON (read the file path and send the response as json)
-   - run on port 8080
-   - node server.js
-
-2.
-   - create a GET /code route to serve the /code json
-   - get it in your browser (check out the json formatter)
-
-3.
-   - create a GET /code/:id route to serve an individual code
-   - if there is no code, send a 404 back
-
-4.
-   - create a POST /code/:id route. this should save the post data to a file on your machine
-   - using postman, post the supplied json to your localhost:8080/api/:code
-   - try to get it in your browser
-
-#### MVC (advanced / extra)
-
-1.
-   - set up a templating engine? or static files? the different use cases. add an api source and add stuff into the view.
-   - store the HTML in a views directory
-   - could render the JSON data into a view
-
-### homework
-
-- practical project
- - maybe add to the app from the session - 3, setting up views for the data?
- - add more routes for the HTTP / REST verbs / methods
-- "koans"
- - supertest unit tests to isolate concepts
- - run tests in CI when PRs submitted

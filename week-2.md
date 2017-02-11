@@ -1,16 +1,20 @@
-## Node II
+# Node II
 
-#### It's our second week of Node.js! The plan is as follows:
+### It's our second week of Node.js! The plan is as follows:
 
-### 10:30 AM - Homework review
+## 10:30 AM - Homework review
 
-### 11:00 AM - Scrum session with Kram
+## 11:00 AM - Scrum session with Kram
 
-### 1:00 PM - Node session
+## 1:00 PM - Node session
 
-This is going to be a mixture of practical pair-programming parts, and instuctor-led parts to recap the fundamentals of Node.js.
+This is going to be a mixture of instructor-led parts to recap the fundamentals of Node.js, and practical pair-programming parts to get more experience with building Node.js apps.
 
-#### Practical part:
+### Node.js Fundamentals Recap
+
+[Link](/node-recap.md)
+
+### Practical exercises: The Status Code API and The Status Code Website.
 
 First up, we are going to build a Node.js API to provide JSON data containing information about all the different [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 

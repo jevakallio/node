@@ -1,4 +1,4 @@
-## Node week 2
+## Node II
 
 #### It's our second week of Node.js! The plan is as follows:
 
@@ -6,7 +6,7 @@
 
 ### 11:00 AM - Scrum session with Kram
 
-### 1:00 PM - Node session II
+### 1:00 PM - Node session
 
 This is going to be a mixture of practical, pair-programming parts, and instuctor-led parts to recap the fundamentals of Node.js.
 

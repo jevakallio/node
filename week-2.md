@@ -20,7 +20,7 @@ First up, we are going to build a Node.js API to provide JSON data containing in
 
 The API is an Express app, just like the one you built last week. It has a server.js file but no routes... yet. You need to add them.
 
-To guide you, the app has a test suite which you can run with `npm test`. Currently there should be a single failing test (don't worry about the 'pending' ones yet). The failing test should say something like `Error: expected 200 "OK", got 404 "Not Found"`. 
+To guide you, the app has a test suite which you can run with `npm test`. There should be a single failing test. The failing test should say something like `Error: expected 200 "OK", got 404 "Not Found"`. 
 
 You need to identify what request the test is expecting your app to handle, and then you must add the correct route to your server.js file. Once you've done that, the test will pass!
 

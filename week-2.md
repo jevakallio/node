@@ -26,7 +26,7 @@ To guide you, the app has a test suite which you can run with `npm test`. There 
 
 You need to identify what request the test is expecting your app to handle, and then you must add the correct route to your server.js file. Once you've done that, the test will pass!
 
-If you look at the test itself, you will see that it is doing the equivalent of running your app and then calling 'http://localhost:8080/code/200'. Then it is expecting to receive a HTTP response containing JSON data about the status code `200 "OK"`.
+If you look at the test itself, you will see that it is doing the equivalent of running your app and then calling `http://localhost:8080/code/200` (you can try this yourself if you're curious). Then it is expecting to receive a HTTP response containing JSON data about the status code `200 "OK"`.
 
 This should give you an idea of the work you and your pair now need to do. Why would your app respond with a `404 "Not Found"` when it gets a request for `/code/200`? 
 

@@ -18,6 +18,8 @@ This is going to be a mixture of instructor-led parts to recap the fundamentals 
 
 First up, we are going to build a Node.js API to provide JSON data containing information about all the different [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
+Your starting point is this repo: https://github.com/Code-Your-Future/node-status-code-api. You need to clone it to your local machine.
+
 The API is an Express app, just like the one you built last week. It has a server.js file but no routes... yet. You need to add them.
 
 To guide you, the app has a test suite which you can run with `npm test`. There should be a single failing test. The failing test should say something like `Error: expected 200 "OK", got 404 "Not Found"`. 

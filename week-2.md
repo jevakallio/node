@@ -12,7 +12,7 @@ This is going to be a mixture of instructor-led parts to recap the fundamentals 
 
 ### Node.js Fundamentals Recap
 
-[Link](/node-recap.md)
+[Link](node-recap.md)
 
 ### Practical exercises: The Status Code API and The Status Code Website.
 
